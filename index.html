@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta name="charset" content="UTF-8">
+    <meta name="keywords" content="number, guess, game">
+    <meta name="description" content="Number guessing game with html, css and js">
+    <meta name="author" content="ShinCoder">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number guessing game 2.0</title>
+    <link rel="stylesheet" href="Number_game.css">
+    <script src="https://kit.fontawesome.com/f4b511b87a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <div class="flex-container main-container">
+        <h1>Guess the number</h1>
+        <div class="flex-container full-width">
+            <div class="start-button" onclick="startGame()">Start new game</div>
+        </div>
+        <div class="game-body" id="game-body">
+            <div class="input-box full-width" id="input-box"></div>
+            <div class="hint-box full-width" id="hint-box"></div>
+            <div class="numpad">
+                <div class="key" onclick="sendInput(0)">0</div>
+                <div class="key" onclick="sendInput('clear')">C</div>
+                <div class="key" onclick="sendInput('del')"><i class="fa-solid fa-delete-left"></i></div>
+                <div class="key" onclick="sendInput(1)">1</div>
+                <div class="key" onclick="sendInput(2)">2</div>
+                <div class="key" onclick="sendInput(3)">3</div>
+                <div class="key" onclick="sendInput(4)">4</div>
+                <div class="key" onclick="sendInput(5)">5</div>
+                <div class="key" onclick="sendInput(6)">6</div>
+                <div class="key" onclick="sendInput(7)">7</div>
+                <div class="key" onclick="sendInput(8)">8</div>
+                <div class="key" onclick="sendInput(9)">9</div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+    <script src="Number_game.js"></script>
+</body>
+
+</html>
